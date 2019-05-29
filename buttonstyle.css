@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+ @font-face 
+ {
+ src: url('../font/Lato-Regular.ttf');
+ font-family: 'Lato';
+}
+body 
+{
+	font-family: 'Lato', sans-serif;
+}
+
+input[type="submit"].signup
+{
+  display: inline-block;
+  padding: 15px 45px;
+  font-family: "Bitter",serif;
+  line-height: 1;
+  appearance: none;
+  box-shadow: none;
+  border:none ;
+  border-radius: 0;
+  background-color:#1472cc;
+}
+input[type="submit"].signup:hover
+{
+  background-color: #054888;
+  text-shadow: -1px 1px #054888;
+}
+input[type="submit"].signup:active
+{
+background-color: #03376a;
+text-shadow: -1px 1px #03376a;
+}
+input[type="submit"].disable
+{
+  display: inline-block;
+  padding: 15px 45px;
+  font-family: "Bitter",serif;
+  line-height: 1;
+  appearance: none;
+  box-shadow: none;
+  border:none ;
+  border-radius: 0;
+  background-color: #1472cc;
+}
+button:focus 
+ {
+	 outline:0;
+	 }

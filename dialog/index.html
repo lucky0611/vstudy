@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery MDL Plugin Demos</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet" type="text/css">
+<link href="dist/mdl.css" rel="stylesheet" type="text/css">
+<style>
+body { font-family:'Roboto'; line-height:1.5}
+.container {
+  margin: 50px auto;
+  max-width: 728px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5D9CEC;
+  border-bottom: 3px solid #4A89DC;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin:30px 10px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>jQuery MDL Plugin Demos</h1><div class="jquery-script-ads" style="margin:30px auto;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div> <a class="btn" id="btn-1" data-target="#demo-1" > Basic Modal / Alert Dialog </a> <a class="btn" id="btn-2" data-type="confirm" data-fullscreen="false" data-overlayClick="true"> Confirm Dialog </a> <a class="btn" id="btn-3" data-type="prompt" data-fullscreen="false" data-overlayClick="true"> Prompt Dialog </a> <a class="btn" id="btn-4" data-target="#demo-2" >Fullscreen </a></div>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+<script src="dist/mdl-min.js"></script>
+<div class="mdl" id="demo-1">
+  <div class="mdl-container">
+    <h2> jQuery MDL Plugin Demos </h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum pharetra elementum. Vivamus ut felis turpis. Morbi laoreet nisi nulla, sed molestie justo porta ut. Nunc rutrum sapien vitae efficitur laoreet. Curabitur a enim ligula. Nam ac suscipit est. Integer ut lectus purus. Quisque libero orci, fringilla posuere purus non, lobortis euismod metus.
+      
+    Aliquam odio ante, facilisis hendrerit neque quis, cursus fringilla tellus. Donec felis velit, fringilla vel nisi at, molestie sodales nibh. Nunc porta tellus non urna mollis malesuada. In eu felis pretium, vulputate ligula ut, consequat sem. Pellentesque pulvinar posuere libero at iaculis. Maecenas malesuada condimentum lorem. Suspendisse convallis ex quis purus ultricies ullamcorper. Etiam tempor ante et hendrerit volutpat. Vestibulum lacinia dolor vitae sapien sagittis, id tempus mauris faucibus. Nam ullamcorper diam ex, vitae tempor odio euismod nec. Sed viverra ut nulla vitae gravida. Nam semper sed neque et condimentum.</p>
+  </div>
+</div>
+<div class="mdl" id="demo-2">
+  <div class="mdl-container">
+    <h2> jQuery MDL Plugin Demos </h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum pharetra elementum. Vivamus ut felis turpis. Morbi laoreet nisi nulla, sed molestie justo porta ut. Nunc rutrum sapien vitae efficitur laoreet. Curabitur a enim ligula. Nam ac suscipit est. Integer ut lectus purus. Quisque libero orci, fringilla posuere purus non, lobortis euismod metus.
+      
+    Aliquam odio ante, facilisis hendrerit neque quis, cursus fringilla tellus. Donec felis velit, fringilla vel nisi at, molestie sodales nibh. Nunc porta tellus non urna mollis malesuada. In eu felis pretium, vulputate ligula ut, consequat sem. Pellentesque pulvinar posuere libero at iaculis. Maecenas malesuada condimentum lorem. Suspendisse convallis ex quis purus ultricies ullamcorper. Etiam tempor ante et hendrerit volutpat. Vestibulum lacinia dolor vitae sapien sagittis, id tempus mauris faucibus. Nam ullamcorper diam ex, vitae tempor odio euismod nec. Sed viverra ut nulla vitae gravida. Nam semper sed neque et condimentum.</p>
+  </div>
+</div>
+<script>
+$('#btn-1').mdl({
+  type: 'modal',
+  fullscreen:false,
+  overlayClick:true
+});
+$('#btn-2').mdl({
+  content:"Are You Sure To Delete This Entry?"
+  
+}, function(result){
+    alert("result:" + result);
+});
+$('#btn-3').mdl({
+  type:'prompt',
+  overlayClick:false,
+  content:"What is your name?"
+  
+}, function(result){
+    alert("result:" + result);
+});
+$('#btn-4').mdl({
+  type: 'modal',
+  overlayClick:true
+});
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

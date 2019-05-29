@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html> 
+<head>    
+	<meta charset="utf-8">    
+	<title>lec4</title>    
+	 
+</head> 
+<body>
+</body> 
+<script src="d3.min.js" charset="utf-8"></script>
+<script>
+//Name of sections
+var sections = ["section 1","section 2","section 3","section 4","section 5","section 6","section 7"]; 
+var dataArray = [120,5,6,158,14,56,50]; //data in minutes
+var no_sec = dataArray.length;
+var width = 320 + 80*(no_sec-3);
+var height = 500;
+
+var y = d3.scale.linear()
+			.domain([0,180]) //max time in minutes
+			.range([0,100]);
+
+var color = d3.scale.ordinal()
+					.range(["#6363FF", "#6373FF", "#63A3FF","#63b3FF","#63c3FF"]);
+
+
+var widthScale = d3.scale.linear()
+   					.range([0, no_sec*30+(no_sec-1)*50]);
+
+
+var canvas = d3.select("body")
+	.append("svg")
+	.attr("width", width)
+	.attr("height", height)
+	.style("box-shadow","2px 2px 30px 2px #d2d2d2")
+	.style("background-color","#fde0ca");
+
+
+	
+
+canvas.append("text")
+		.attr("x",width-80)
+		.attr("y",height/4-20)
+		.html("x   -    Sections")
+		.attr("text-anchor","middle")
+		.attr("font-size","18px")
+		.style("fill","#f6710e");
+
+canvas.append("text")
+		.attr("x",width-80)
+		.attr("y",height/3-38)
+		.html("y   -    Time")
+		.attr("text-anchor","middle")
+		.attr("font-size","18px")
+		.style("fill","#6383ff");		
+
+var axis = d3.svg.axis()
+				.ticks(0)
+				.tickSize(2)
+				.scale(widthScale);
+
+var bars = canvas.selectAll("rect")
+				.data(dataArray)
+				.enter();
+				
+bars.append("rect")
+	.attr("width", 30)
+	.attr("height",function(d){return y(d)*3;})
+	.attr("x", function(d,i){return 50+ i*80;})
+	.attr("y", function(d){return (450-y(d)*3);})
+	.attr("fill", function(d,i){return color(i);})
+
+bars.append("text")
+	.attr("x",function(d,i){return 65+i*80;})
+	.attr("y",function(d){return 445-y(d)*3;})
+	.attr("fill","#000000")
+	.attr("text-anchor","middle")
+	.text(function(d){return d;})
+	.attr("font-size","13px");		
+
+bars.append("text")
+	.attr("x",function(d,i){return 65+i*80;})
+	.attr("y",function(d){return 465;})
+	.attr("fill","#000000")
+	.attr("text-anchor","middle")
+	.text(function(d,i){return sections[i];})
+	.attr("font-size","13px");			
+
+
+canvas.append("g")
+		.attr("transform", "translate(50, 450)")
+		.call(axis)
+		.style("fill","#f6710e");
+
+canvas.append("rect")
+		.attr("x",width/2-120)
+		.attr("y",height/7-25)
+		.attr("width",240)
+		.attr("height",35)
+		.attr("opacity",0.3)
+		.attr("fill","#fcc7a0");		
+
+canvas.append("text")
+		.attr("x",width/2)
+		.attr("y",height/7)
+		.text("Sectional Time Analysis")
+		.attr("text-anchor","middle")
+		.attr("font-size","22px")
+		.style("fill","#f6710e");
+
+</script>
+</html>

@@ -1,0 +1,37 @@
+body{
+font-family:sans-serif ;
+color:white;
+}
+.line{
+ repeat-x;
+}
+.logo{
+padding:20px;
+}
+h1{
+text-align:center;
+color:blue ;
+}
+.user{
+text-align:center;
+color:navy;
+}
+.text{
+color:black;
+}
+#existinguser{
+width:350px ;
+padding:20px ;
+background-image:url(vertical.gif);
+background-repeat:no-repeat;
+background-position:right;
+}
+#signup{
+;
+padding:30px ;
+position: absolute ;
+right : 400px;
+}
+#footer{
+clear:right ;
+}

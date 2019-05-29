@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+#portal{
+	-webkit-animation: pulse 0.5s ease-in 0 infinite normal both;
+		-moz-animation: pulse 0.5s ease-in 0 infinite normal both;
+		-o-animation: pulse 0.5s ease-in 0 infinite normal both;
+		animation: pulse 0.5s ease-in 0 infinite normal both;
+}
+@-webkit-keyframes pulse {
+		0% { background-color: #e37542; }
+		50% { background-color: green; }
+		
+	}
+	@-moz-keyframes pulse {
+		0% { background-color: #e37542; }
+		50% { background-color: green; }
+		
+	}
+	@-ms-keyframes pulse {
+		0% { background-color: #e37542; }
+		50% { background-color: green; }
+		
+	}
+	@-o-keyframes pulse {
+		0% { background-color: #e37542; }
+		50% { background-color: green; }
+		
+	}
+	@keyframes pulse {
+		0% { background-color: #e37542; }
+		50% { background-color: green; }
+		
+	}
+*/
+#wheel {
+    -webkit-transition: -webkit-transform 2s ease-out;
+}
+
+.flexcroll{
+    scrollbar-face-color: #1472cc;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+}
+.flexcroll::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+
+.flexcroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.flexcroll::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(20,114,204,1); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}

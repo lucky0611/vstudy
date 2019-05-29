@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+@charset "utf-8";
+/* CSS Document */
+/* unvisited link */
+
+@font-face {
+ src: url('../font/Lato-Regular.ttf');
+ font-family: 'Lato';
+}
+a:link {
+    color:black;
+	text-decoration:none ;
+}
+/* mouse over link */
+a:hover {
+	color:black;
+    text-decoration:underline ;
+}
+a:visited {
+	color:black;
+    text-decoration:none ;
+}
+body 
+{
+font-family: 'Lato', sans-serif;
+}
+.background
+   {
+	   background-image: url("../adminside/loadingback.gif");
+	   background-repeat: no-repeat;
+	   background-position:right top;
+	   background-size: 30px 30px ;
+   }
+input[type="submit"].login,input[type="submit"].login1 ,#edit
+{
+  display: inline-block;
+  padding: 15px 45px;
+  font-size: 24px;
+  font-family: "Bitter",serif;
+  line-height: 1;
+  appearance: none;
+  box-shadow: none;
+  border:none ;
+  border-radius: 0;
+  background-color: #1472cc;
+}
+input[type="submit"].signup,input[type="submit"].signup1 
+{
+  display: inline-block;
+  padding: 15px 45px;
+  font-size: 24px;
+  font-family: "Bitter",serif;
+  line-height: 1;
+  appearance: none;
+  box-shadow: none;
+  border:none ;
+  border-radius: 0;
+  background-color: #dd5489;
+}
+input[type="submit"].login:hover,input[type="submit"].login1:hover,#edit
+{
+  background-color: #054888;
+  text-shadow: -1px 1px #054888;
+}
+input[type="submit"].signup:hover,input[type="submit"].signup1:hover
+{
+  background-color: #B01350;
+  text-shadow: -1px 1px #B01350;
+}
+input[type="submit"].login:active,input[type="submit"].login1:active,#edit
+{
+background-color: #03376a;
+text-shadow: -1px 1px #03376a;
+}
+input[type="submit"].signup:active,input[type="submit"].signup1:active
+{
+background-color: #8b0539;
+text-shadow: -1px 1px #8b0539;
+}
+
+#signup,#login,.boxs
+{
+ -webkit-box-shadow: 2px 0 5px 4px #969696;
+  -moz-box-shadow: 2px 0 5px 4px #969696;
+  box-shadow: 2px 0 5px 4px #969696;	
+}
+#logo
+{
+ -webkit-box-shadow: 2px 0 5px 4px #969696;
+  -moz-box-shadow: 2px 0 5px 4px #969696;
+  box-shadow: 2px 0 5px 4px #969696;	
+}
+button:focus ,input[type="submit"]:focus
+ {
+	 outline:0;
+	 
+	 }
+.nostyle
+{
+	background:none!important;
+	border:none;
+	padding:0!important;
+	cursor:pointer;
+	appearance: none;
+	box-shadow: none;
+	color:rgb(120,120,120);
+ 
+}
+.nostyle:hover
+{
+	color:black;
+	
+}
+.butt
+{
+	display: inline-block;
+ 
+  appearance: none;
+  box-shadow: none;
+  border:none ;
+  border-radius: 0;
+  background-color: #dd5489;
+  cursor:pointer;
+  color:white;
+  padding:5px 10px
+}
+.butt:hover
+{
+	background-color: #B01350;
+  text-shadow: -1px 1px #B01350;
+}
+	 
+

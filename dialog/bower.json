@@ -1,0 +1,21 @@
+{
+    "name": "jquery-mdl",
+    "version": "0.0.1",
+    "main": "dist/mdl-min.js",
+    "ignore": [
+        "source",
+        "spec",
+        ".bowerrc",
+        ".gitignore",
+        ".jshintignore",
+        ".jshintrc",
+        "bower.json",
+        "gruntfile.js",
+        "package.json",
+        "LICENSE",
+        "README.md"
+    ],
+    "dependencies": {
+        "jquery": ">=1.10.2"
+    }
+}

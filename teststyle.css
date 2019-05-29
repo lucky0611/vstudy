@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+ src: url('../font/Lato-Regular.ttf');
+ font-family: 'Lato';
+}
+@font-face {
+src: url('led.ttf');
+font-family:"LED";
+}
+@font-face {
+    font-family: Walkman-Chanakya-Boldx-901;
+    src: url('../font/WalkmanChanakya901Bold.ttf');
+}
+@font-face {
+    font-family: Walkman-Chanakya-901;
+    src: url('../font/WalkmanChanakya901Normal-Italic.ttf');
+}
+@font-face {
+    font-family: Walkman-Chanakya-901;
+    src: url('../font/WalkmanChanakya901Normal.woff');
+}
+
+@font-face {
+    font-family:Walkman-Chanakya-Boldx-901;
+    src: url('../font/WalkmanChanakyaBoldx901Normal.ttf');
+}
+@font-face {
+    font-family:Arial Unicode MS;
+    src: url('../font/ARIALUNI.ttf');
+}
+
+#hour,#min,#sec
+{
+	color:black;
+font-weight:bold;
+	
+    
+}
+button:focus 
+ {
+	 outline:0;
+	 }
+body 
+{
+font-family: 'Lato' , sans-serif;
+}
+.stylebutton
+{
+	appearance: none;
+  box-shadow: none;
+  border:none ;
+  border-radius: 0;
+  background-color:#4E85C5;
+  color:white;
+  height:2.5em;
+}
+.stylebutton:hover
+{
+	background-color: #4E85C5;
+  text-shadow: -1px 1px #4E85C5;
+}
+.stylebutton:active
+{
+background-color: #4E85C5;
+text-shadow: -1px 1px #4E85C5;	
+}
+.stylebutton1
+{
+	appearance: none;
+  box-shadow: none;
+  border:none ;
+  border-radius: 0;
+  background-color:#C7DCF0;
+  color:black;
+  height:2.5em;
+  
+}
+.stylebutton1:hover
+{
+	background-color: #C7DCF0;
+  text-shadow: -1px 1px #C7DCF0;
+}
+.stylebutton1:active
+{
+background-color: #C7DCF0;
+text-shadow: -1px 1px #C7DCF0;	
+}
+.sidebutton
+{
+	appearance: none;
+  box-shadow: none;
+  border:none ;
+  border-radius: 0;
+  background-color:#C7DCF0;
+  height:2.5em;
+  font-size:16px;
+}
+.sidebutton:hover
+{
+	background-color: #88b9e9;
+  text-shadow: -1px 1px #88b9e9;
+}
+.sidebutton:active
+{
+background-color: #88b9e9;
+text-shadow: -1px 1px #88b9e9;	
+}
+
+.whitebut
+{
+	border:1px solid #bcbcbc;
+	width: 50px;
+	appearance: none;
+	height:50px;
+	border-radius:2px ;
+	font-size:12px;
+	cursor:pointer;
+	background-color: #dcdcdc;
+	color:black;
+	
+}
+.buttonredcol
+{
+	background-image:url('red.png?v=1.0.1');
+	background-size: 50px 50px;
+	width: 50px;
+	background-repeat:no-repeat;
+	border:none;
+	appearance: none;
+	height:50px;
+	font-size:12px;
+	cursor:pointer;
+	border-radius: 0px ;
+	background-color: #E5F6FD;
+}
+.buttongreencol
+{
+	background-image:url('green.png?v=1.0.1');
+	background-size: 50px 50px;
+	width: 50px;
+	background-repeat:no-repeat;
+	border:none;
+	appearance: none;
+	height:50px;
+	font-size:12px;
+	cursor:pointer;
+	border-radius: 0px ;
+	background-color: #E5F6FD;
+}
+.buttonpurplecol
+{
+	background-image:url('purple.png?v=1.0.1');
+	background-size: 50px 50px;
+	width: 50px;
+	background-repeat:no-repeat;
+	border:none;
+	appearance: none;
+	height:50px;
+	font-size:12px;
+	cursor:pointer;
+	border-radius: 0px ;
+	background-color: #E5F6FD;
+}
+.buttonpurpletickcol
+{
+	background-image:url('purpletick.png?v=1.0.1');
+	background-size: 50px 50px;
+	width: 50px;
+	background-repeat:no-repeat;
+	border:none;
+	appearance: none;
+	height:50px;
+	font-size:12px;
+	cursor:pointer;
+	border-radius: 0px ;
+	background-color: #E5F6FD;
+}
+.buttonredcol1
+{
+	background-image:url('red.png?v=1.0.1');
+	background-size: 35px 35px;
+	background-repeat:no-repeat;
+	border:none;
+	appearance: none;
+	font-size:10px;
+	height:35px;
+	width : 38px ;
+	background-color: #E5F6FD;
+}
+.buttongreencol1
+{
+	background-image:url('green.png?v=1.0.1');
+	background-size: 35px 35px;
+	background-repeat:no-repeat;
+	border:none;
+	appearance: none;
+	font-size:10px;
+	height:35px;
+	width : 38px ;
+	background-color: #E5F6FD;
+}
+.buttonpurplecol1
+{
+	background-image:url('purple.png?v=1.0.1');
+	background-size: 35px 35px;
+	background-repeat:no-repeat;
+	border:none;
+	appearance: none;
+	font-size:10px;
+	height:35px;
+	width : 38px ;
+	background-color: #E5F6FD ;
+	}
+.buttonpurpletickcol1
+{
+	background-image:url('purpletick.png?v=1.0.1');
+	background-size: 35px 35px;
+	background-repeat:no-repeat;
+	border:none;
+	appearance: none;
+	font-size:10px;
+	height:35px;
+	width : 38px ;
+	background-color: #E5F6FD;
+}
+.backspace:hover{
+background-color:#8bba2e;
+}
+.backspace{
+background-color:#dedbe4;
+}
+
+.la:hover{
+background-color:#8bba2e;
+}
+.la{
+background-color:#dedbe4;
+}
+.ra:hover{
+background-color:#8bba2e;
+}
+.ra{
+background-color:#dedbe4;
+}
+.clears:hover{
+background-color:#8bba2e;
+}
+.clears{
+background-color:#dedbe4;
+}
+.nine,.seven,.eight,.four,.five,.six,.zero,.one,.two,.three,.dot,.minus{
+background-color:#eeeeee;
+}
+.nine:hover,.seven:hover,.eight:hover,.four:hover,.five:hover,.six:hover,.zero:hover,.one:hover,.two:hover,.three:hover,.dot:hover,.minus:hover{
+background-color: #cee9fc;    
+}
